@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body>
+    <form action="/">
+
+        <input type="text" placeholder="Nombre y apellido">
+        <input type="text" placeholder="Nombre de usuario">
+        <input type="email" placeholder="E-mail">
+        <label for="date">Fecha de nacimiento</label>
+        <input type="date" name="date" id="date">
+        <input type="text" placeholder="Domicilio">
+
+        <h4>Perfil de usuario</h4>
+        <section class="profileOfUser">
+            <input type="radio" name="perfilDeUsuario" value="Comprador" id="comprador">
+            <label for="comprador">Comprador</label>
+            <input type="radio" name="perfilDeUsuario" value="Vendedor" id="vendedor">
+            <label for="vendedor">Vendedor</label>
+        </section>
+
+        <h4>Intereses</h4>
+        <section class="intereses">
+            <div class="flex">
+                <input type="checkbox" name="electro" id="electro">
+                <label for="electro">Electro</label>
+            </div>
+
+            <div class="flex">
+                <input type="checkbox" name="moda" id="moda">
+                <label for="moda">Moda</label>
+            </div>
+
+            <div class="flex">
+                <input type="checkbox" name="hogar" id="hogar">
+                <label for="hogar">Hogar</label>
+            </div>
+
+            <div class="flex">
+                <input type="checkbox" name="jugueteria" id="jugueteria">
+                <label for="jugueteria">Juguetería</label>
+            </div>
+
+            <div class="flex">
+                <input type="checkbox" name="vidaSana" id="vidaSana">
+                <label for="vidaSana">Vida sana</label>
+            </div>
+        </section>
+
+        <input type="file" name="avatar" id="avatar">
+
+        <label for="pass">Contraseña:</label>
+        <input type="password" name="pass" id="pass" placeholder="*********">
+        <label for="pass2">Confirmar contraseña</label>
+        <input type="password" name="pass" id="pass2" placeholder="**********">
+
+        <section class="buttons">
+            <button id="delete" type="reset">Borrar</button>
+            <button type="submit">Enviar</button>
+        </section>
+
+    </form>
+</body>
+
+</html>

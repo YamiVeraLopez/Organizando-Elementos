@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root {
+    --yellow: #EAC926;
+    --blue: #03264C;
+    --ligthBlue: #1259c3;
+    --darkGrey: #666;
+    --ligthGrey: #dddddd;
+    --green: #39b54a;
+    /*  Fonts */
+    --font-primary: 'Roboto';
+    /* Font size */
+    --paragraph: 12px;
+    --title: 24px;
+    --prices: 18px;
+    --descriptions: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: (var(--font-primary));
+    background-color: var(--ligthGrey);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+form input {
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    margin: 1rem 0;
+}
+
+form label {
+    font-family: var(--font-primary);
+    padding: 5px;
+    font-size: small;
+}
+
+form h4 {
+    font-family: var(--font-primary);
+    padding: 5px;
+}
+
+form .profileOfUser {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form .intereses {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+form .intereses input{
+    border-radius: 7px;
+    margin: 1rem;
+}
+
+form .intereses .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+form button {
+    color: var(--ligthGrey);
+    font-family: var(--font-primary);
+    background-color: var(--ligthBlue);
+    padding: 10px;
+    border-radius: 7px;
+    margin: 5px 0;
+    width: inherit;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+form button.login:hover {
+    background-color: #0022AA;  
+}
+
+form button#delete {
+    color: var(--ligthGrey);
+    font-family: var(--font-primary);
+    background-color: crimson;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 5px 0;
+    width: inherit;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+form button:hover {
+    box-shadow: 0px 0px 10px var(--yellow);
+}
